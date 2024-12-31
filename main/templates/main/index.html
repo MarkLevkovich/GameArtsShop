@@ -1,16 +1,22 @@
+{% extends "main/base.html" %}
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{title}}</title>
-</head>
-<body>
-    <p>{{content}}</p>
-    {% if bool %}
-        <p>{{list.1}}</p>
-        <p>{{dict.first}}</p>
-    {% endif %}
 
-</body>
-</html>
+{% block css %}
+    <link rel="stylesheet" href="{% static "deps/css/my_footer_css.css" %}">
+{% endblock  %}
+
+{% block content %}
+    <h2 class='mt-5 pt-5'><strong>{{ content }}</strong></h2>
+{% endblock  %}
+
+{% block footer %}
+<footer class="py-4 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Game Arts 2024</p>
+    </div>
+</footer>
+{% endblock  %}
+

@@ -3,17 +3,42 @@ from django.shortcuts import render
 
 def index(request):
     context = {
-        'title': 'Home',
-        'content': 'Главная страница веб магаза',
-        'list': ['first', 'second'],
-        'dict': {'first': 1},
-        'bool': False
+        'title': 'Main Page',
+        'content': ""
+
     }
 
     return render(request, 'main/index.html', context)
 
 def about(request):
-    return HttpResponse('About Page')
+    context = {
+        'title': 'About Page',
+        'content': 'About us',
+        'text_on_page': "This text about our online shop"
+
+    }
+
+    return render(request, 'main/about.html', context)
+
+def contacts(request):
+    context = {
+        'title': 'Contacts Page',
+        'content': 'Our contacts',
+        'text_on_page': "This is our contacts..."
+
+    }
+
+    return render(request, 'main/contacts.html', context)
+
+def deliver(request):
+    context = {
+        'title': 'Deliver Page',
+        'content': 'Deliver',
+        'text_on_page': "This is our deliver information..."
+
+    }
+
+    return render(request, 'main/deliver.html', context)
 
 
 
