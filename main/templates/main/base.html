@@ -77,7 +77,7 @@
     <section>
         <div class="container">
             <!-- Каталог и корзина с фиксированным расположением на странице -->
-            <div class="row mt-1 position-fixed z-3">
+            <div class="row mt-5 position-fixed z-3">
                 <!-- Каталог -->
                 <div class="dropdown mb-2">
                     <button class="btn btn-secondary dropdown-toggle btn-dark" type="button" data-bs-toggle="dropdown"
@@ -87,12 +87,12 @@
                             height="16">
                     </button>
                     <ul class="dropdown-menu bg-dark" data-bs-theme="dark">
-                        <li><a class="dropdown-item text-white" href="goods/catalog.html">Все товары</a></li>
-                        <li><a class="dropdown-item text-white" href="goods/catalog.html">Клавиатуры</a></li>
-                        <li><a class="dropdown-item text-white" href="goods/catalog.html">Мыши</a></li>
-                        <li><a class="dropdown-item text-white" href="goods/catalog.html">Наушники</a></li>
-                        <li><a class="dropdown-item text-white" href="goods/catalog.html">Коврики</a></li>
-                        <li><a class="dropdown-item text-white" href="goods/catalog.html">Другое</a></li>
+                        <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">Клавиатуры</a></li>
+                        <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">Все товары</a></li>
+                        <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">Мыши</a></li>
+                        <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">Наушники</a></li>
+                        <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">Коврики</a></li>
+                        <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">Другое</a></li>
                     </ul>
                 </div>
                 <!-- Значек корзины, вызывает модальное окно -->
