@@ -40,282 +40,40 @@
             <button type="submit" class="btn btn-primary mx-3 mt-3">Применить</button>
         </form>
     </div>
-    <!-- Карта товара -->
-    <div class="col-lg-4 col-md-6 p-4">
-        <div class="card border-black rounded custom-shadow">
-            <img src="../deps/images/goods/redfizz.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <a href="../goods/product.html">
-                    <p class="card-title">Red Dragon Fizz</p>
-                </a>
-                <p class="card-text text-truncate">Игровая 60% клавиатура от бренда Red Dragon</p>
-                <p class="product_id">id: 02265</p>
-                <div class="d-flex justify-content-between">
-                    <p><s>100</s> $</p>
-                    <p><strong>90.00 $</strong></p>
-                    <span class="badge bg-warning text-dark">Скидка 10.00 %</span>
-                    <!-- <p><strong>100.00 $</strong></p> -->
-                    <a href="#" class="btn add-to-cart">
-                        <img class="mx-1" src="../deps/icons/cart-plus.svg" alt="Catalog Icon"
-                            width="32" height="32">
+
+
+
+    {% for product in goods %}
+        <!-- Карта товара -->
+        <div class="col-lg-4 col-md-6 p-4">
+            <div class="card border-black rounded custom-shadow">
+                <img src="{% static product.image %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="../goods/product.html">
+                        <p class="card-title">{{ product.name }}</p>
                     </a>
+                    <p class="card-text text-truncate">{{ product.description }}</p>
+                    <p class="product_id">id: 02265</p>
+                    <div class="d-flex justify-content-between">
+                        {% comment %} <p><s>100</s> $</p>
+                        <p><strong>90.00 $</strong></p>
+                        <span class="badge bg-warning text-dark">Скидка 10.00 %</span> {% endcomment %}
+                        <p><strong>{{ product.price }} BYN</strong></p>
+                        <a href="#" class="btn add-to-cart">
+                            <img class="mx-1" src="{% static "/deps/icons/cart-plus.svg" %}" alt="Catalog Icon"
+                                width="32" height="32">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Карта товара -->
-    <div class="col-lg-4 col-md-6 p-4">
-        <div class="card border-black rounded custom-shadow">
-            <img src="../deps/images/goods/royelkl.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <a href="#">
-                    <p class="card-title">Royal Kludge RK84 RGB</p>
-                </a>
-                <p class="card-text text-truncate">Игровая 75% клавиатура от бренда Royal Kludge</p>
-                <p class="product_id">id: 02265</p>
-                <div class="d-flex justify-content-between">
-                    <p><s>100</s> $</p>
-                    <p><strong>90.00 $</strong></p>
-                    <span class="badge bg-warning text-dark">Скидка 10.00 %</span>
-                    <!-- <p><strong>100.00 $</strong></p> -->
-                    <a href="#" class="btn add-to-cart">
-                        <img class="mx-1" src="../deps/icons/cart-plus.svg" alt="Catalog Icon"
-                            width="32" height="32">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Карта товара -->
-    <div class="col-lg-4 col-md-6 p-4">
-        <div class="card border-black rounded custom-shadow">
-            <img src="../deps/images/goods/darkproject.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <a href="#">
-                    <p class="card-title">Dark Project KD87A</p>
-                </a>
-                <p class="card-text text-truncate">Игровая 75% клавиатура от бренда Dark Project</p>
-                <p class="product_id">id: 02265</p>
-                <div class="d-flex justify-content-between">
-                    <p><s>100</s> $</p>
-                    <p><strong>90.00 $</strong></p>
-                    <span class="badge bg-warning text-dark">Скидка 10.00 %</span>
-                    <!-- <p><strong>100.00 $</strong></p> -->
-                    <a href="#" class="btn">
-                        <img class="mx-1" src="../deps/icons/cart-plus.svg" alt="Catalog Icon"
-                            width="32" height="32">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Карта товара -->
-    <div class="col-lg-4 col-md-6 p-4">
-        <div class="card border-black rounded custom-shadow">
-            <img src="../deps/images/goods/G435.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <a href="#">
-                    <p class="card-title">Logitech G435 Lightspeed</p>
-                </a>
-                <p class="card-text text-truncate">Абсолютно на всех этапах разработки, изготовления и доставки гарнитуры G435 был использован (по мере возможности) переработанный пластик.</p>
-                <p class="product_id">id: 02265</p>
-                <div class="d-flex justify-content-between">
-                    <p><s>100</s> $</p>
-                    <p><strong>90.00 $</strong></p>
-                    <span class="badge bg-warning text-dark">Скидка 10.00 %</span>
-                    <!-- <p><strong>100.00 $</strong></p> -->
-                    <a href="#" class="btn">
-                        <img class="mx-1" src="../deps/icons/cart-plus.svg" alt="Catalog Icon"
-                            width="32" height="32">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Карта товара -->
-    <div class="col-lg-4 col-md-6 p-4">
-        <div class="card border-black rounded custom-shadow">
-            <img src="../deps/images/goods/HyperXCloud.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <a href="#">
-                    <p class="card-title">HyperX Cloud II</p>
-                </a>
-                <p class="card-text text-truncate">наушники с микрофоном, мониторные (охватывающие), геймерские, 15-25000 Гц, кабель 1 м</p>
-                <p class="product_id">id: 02265</p>
-                <div class="d-flex justify-content-between">
-                    <p><s>100</s> $</p>
-                    <p><strong>90.00 $</strong></p>
-                    <span class="badge bg-warning text-dark">Скидка 10.00 %</span>
-                    <!-- <p><strong>100.00 $</strong></p> -->
-                    <a href="#" class="btn">
-                        <img class="mx-1" src="../deps/icons/cart-plus.svg" alt="Catalog Icon"
-                            width="32" height="32">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Карта товара -->
-    <div class="col-lg-4 col-md-6 p-4">
-        <div class="card border-black rounded custom-shadow">
-            <img src="../deps/images/goods/logitech superlight.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <a href="#">
-                    <p class="card-title">Logitech G Pro Wireless</p>
-                </a>
-                <p class="card-text text-truncate">полноразмерная игровая мышь для ПК, проводная USB/беспроводная радио, сенсор оптический 25000 dpi, 7 кнопок, колесо с нажатием, цвет черный</p>
-                <p class="product_id">id: 02265</p>
-                <div class="d-flex justify-content-between">
-                    <p><s>100</s> $</p>
-                    <p><strong>90.00 $</strong></p>
-                    <span class="badge bg-warning text-dark">Скидка 10.00 %</span>
-                    <!-- <p><strong>100.00 $</strong></p> -->
-                    <a href="#" class="btn">
-                        <img class="mx-1" src="../deps/icons/cart-plus.svg" alt="Catalog Icon"
-                            width="32" height="32">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Карта товара -->
-    <div class="col-lg-4 col-md-6 p-4">
-        <div class="card border-black rounded custom-shadow">
-            <img src="../deps/images/goods/LogitechProX.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <a href="#">
-                    <p class="card-title">Logitech Pro X Superlight 2</p>
-                </a>
-                <p class="card-text text-truncate">полноразмерная игровая мышь для ПК, проводная USB/беспроводная радио, сенсор оптический 32000 dpi, 5 кнопок, колесо с нажатием, цвет черный</p>
-                <p class="product_id">id: 02265</p>
-                <div class="d-flex justify-content-between">
-                    <p><s>100</s> $</p>
-                    <p><strong>90.00 $</strong></p>
-                    <span class="badge bg-warning text-dark">Скидка 10.00 %</span>
-                    <!-- <p><strong>100.00 $</strong></p> -->
-                    <a href="#" class="btn">
-                        <img class="mx-1" src="../deps/icons/cart-plus.svg" alt="Catalog Icon"
-                            width="32" height="32">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Карта товара -->
-    <div class="col-lg-4 col-md-6 p-4">
-        <div class="card border-black rounded custom-shadow">
-            <img src="../deps/images/goods/razerv2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <a href="#">
-                    <p class="card-title">Razer Viper V2 Pro</p>
-                </a>
-                <p class="card-text text-truncate">полноразмерная игровая мышь для ПК/для Microsoft Xbox, проводная USB/беспроводная радио, сенсор оптический 30000 dpi, 6 кнопок, колесо с нажатием, цвет черный</p>
-                <p class="product_id">id: 02265</p>
-                <div class="d-flex justify-content-between">
-                    <p><s>100</s> $</p>
-                    <p><strong>90.00 $</strong></p>
-                    <span class="badge bg-warning text-dark">Скидка 10.00 %</span>
-                    <!-- <p><strong>100.00 $</strong></p> -->
-                    <a href="#" class="btn">
-                        <img class="mx-1" src="../deps/icons/cart-plus.svg" alt="Catalog Icon"
-                            width="32" height="32">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Карта товара -->
-    <div class="col-lg-4 col-md-6 p-4">
-        <div class="card border-black rounded custom-shadow">
-            <img src="../deps/images/goods/logmat.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <a href="#">
-                    <p class="card-title">Logitech Desk Mat</p>
-                </a>
-                <p class="card-text text-truncate">оптические мыши/лазерные мыши, ткань, прошитые края, 300x700 мм, цвет серый</p>
-                <p class="product_id">id: 02265</p>
-                <div class="d-flex justify-content-between">
-                    <p><s>100</s> $</p>
-                    <p><strong>90.00 $</strong></p>
-                    <span class="badge bg-warning text-dark">Скидка 10.00 %</span>
-                    <!-- <p><strong>100.00 $</strong></p> -->
-                    <a href="#" class="btn">
-                        <img class="mx-1" src="../deps/icons/cart-plus.svg" alt="Catalog Icon"
-                            width="32" height="32">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Карта товара -->
-    <div class="col-lg-4 col-md-6 p-4">
-        <div class="card border-black rounded custom-shadow">
-            <img src="../deps/images/goods/RazerGigantusV2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <a href="#">
-                    <p class="card-title">Razer Gigantus V2 3XL</p>
-                </a>
-                <p class="card-text text-truncate">оптические мыши/лазерные мыши, ткань, 550x1200 мм, цвет черный</p>
-                <p class="product_id">id: 02265</p>
-                <div class="d-flex justify-content-between">
-                    <p><s>100</s> $</p>
-                    <p><strong>90.00 $</strong></p>
-                    <span class="badge bg-warning text-dark">Скидка 10.00 %</span>
-                    <!-- <p><strong>100.00 $</strong></p> -->
-                    <a href="#" class="btn">
-                        <img class="mx-1" src="../deps/icons/cart-plus.svg" alt="Catalog Icon"
-                            width="32" height="32">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Карта товара -->
-    <div class="col-lg-4 col-md-6 p-4">
-        <div class="card border-black rounded custom-shadow">
-            <img src="../deps/images/goods/Razer Pro Glide XXL.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <a href="#">
-                    <p class="card-title">Razer Pro Glide XXL</p>
-                </a>
-                <p class="card-text text-truncate">оптические мыши/лазерные мыши, ткань, 410x940 мм, цвет серый</p>
-                <p class="product_id">id: 02265</p>
-                <div class="d-flex justify-content-between">
-                    <p><s>100</s> $</p>
-                    <p><strong>90.00 $</strong></p>
-                    <span class="badge bg-warning text-dark">Скидка 10.00 %</span>
-                    <!-- <p><strong>100.00 $</strong></p> -->
-                    <a href="#" class="btn">
-                        <img class="mx-1" src="../deps/icons/cart-plus.svg" alt="Catalog Icon"
-                            width="32" height="32">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Карта товара -->
-    <div class="col-lg-4 col-md-6 p-4">
-        <div class="card border-black rounded custom-shadow">
-            <img src="../deps/images/goods/rykav.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <a href="#">
-                    <p class="card-title">Рукав игровой</p>
-                </a>
-                <p class="card-text text-truncate">для киберспорта</p>
-                <p class="product_id">id: 02265</p>
-                <div class="d-flex justify-content-between">
-                    <p><s>100</s> $</p>
-                    <p><strong>90.00 $</strong></p>
-                    <span class="badge bg-warning text-dark">Скидка 10.00 %</span>
-                    <!-- <p><strong>100.00 $</strong></p> -->
-                    <a href="#" class="btn">
-                        <img class="mx-1" src="../deps/icons/cart-plus.svg" alt="Catalog Icon"
-                            width="32" height="32">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+    {% endfor %}
+
+
+
+
+
+
 
 </div>
 <!-- Пагинация -->
