@@ -3,6 +3,7 @@ from django.core.paginator import Paginator
 from django.shortcuts import get_list_or_404, get_object_or_404, render
 from goods.models import Products
 
+<<<<<<< HEAD
 def catalog(request, category_slug, page=1):
     if category_slug == 'all':
         goods = Products.objects.all()
@@ -11,6 +12,18 @@ def catalog(request, category_slug, page=1):
 
     paginator = Paginator(goods, 6)
     current_page = paginator.page(page)
+=======
+def catalog(request, category_slug):
+    page = request.GET.get('page', 1)
+
+    if category_slug == 'all':
+        goods = Products.objects.all()
+    else:
+        goods = get_list_or_404(Products.objects.filter(category__slug=category_slug))
+
+    paginator = Paginator(goods, 6)
+    current_page = paginator.page(int(page))
+>>>>>>> 1b16c7b (Normal pagination is added)
 
     context = {
         "title": "Catalog Page",
