@@ -23,8 +23,8 @@ def index(request):
 def about(request):
     context = {
         'title': 'About Page',
-        'content': 'About us',
-        'text_on_page': "This text about our online shop"
+        'content': '__________________About us__________________',
+        'text_on_page': "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu nibh eu risus lobortis fringilla sit amet sit amet justo. Nam vulputate hendrerit eros. Suspendisse purus mi, blandit dapibus vehicula at, interdum sit amet justo. Fusce at velit sem. Nullam vestibulum tellus a diam malesuada aliquam. Duis rutrum tortor vel odio malesuada porttitor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris facilisis sed ligula a hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam at eros sit amet turpis lobortis interdum ut at diam. Sed fringilla tortor quam, ac egestas mi posuere a. Phasellus augue lectus, iaculis quis posuere quis, ultricies in tellus. Donec tellus massa, euismod in iaculis et, dignissim a tellus. Integer convallis rutrum feugiat. Phasellus in tempor justo. Nulla bibendum magna ac sapien."
 
     }
 
@@ -33,8 +33,8 @@ def about(request):
 def contacts(request):
     context = {
         'title': 'Contacts Page',
-        'content': 'Our contacts',
-        'text_on_page': "This is our contacts..."
+        'content': '__________________Our contacts__________________',
+        'text_on_page': "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu nibh eu risus lobortis fringilla sit amet sit amet justo. Nam vulputate hendrerit eros. Suspendisse purus mi, blandit dapibus vehicula at, interdum sit amet justo. Fusce at velit sem. Nullam vestibulum tellus a diam malesuada aliquam. Duis rutrum tortor vel odio malesuada porttitor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris facilisis sed ligula a hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam at eros sit amet turpis lobortis interdum ut at diam. Sed fringilla tortor quam, ac egestas mi posuere a. Phasellus augue lectus, iaculis quis posuere quis, ultricies in tellus. Donec tellus massa, euismod in iaculis et, dignissim a tellus. Integer convallis rutrum feugiat. Phasellus in tempor justo. Nulla bibendum magna ac sapien."
 
     }
 
@@ -43,8 +43,8 @@ def contacts(request):
 def deliver(request):
     context = {
         'title': 'Deliver Page',
-        'content': 'Deliver',
-        'text_on_page': "This is our deliver information..."
+        'content': '__________________Deliver__________________',
+        'text_on_page': "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu nibh eu risus lobortis fringilla sit amet sit amet justo. Nam vulputate hendrerit eros. Suspendisse purus mi, blandit dapibus vehicula at, interdum sit amet justo. Fusce at velit sem. Nullam vestibulum tellus a diam malesuada aliquam. Duis rutrum tortor vel odio malesuada porttitor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris facilisis sed ligula a hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam at eros sit amet turpis lobortis interdum ut at diam. Sed fringilla tortor quam, ac egestas mi posuere a. Phasellus augue lectus, iaculis quis posuere quis, ultricies in tellus. Donec tellus massa, euismod in iaculis et, dignissim a tellus. Integer convallis rutrum feugiat. Phasellus in tempor justo. Nulla bibendum magna ac sapien."
 
     }
 
