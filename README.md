@@ -1,6 +1,6 @@
 # GameArtsShop
 # BRANCH --- MASTER!!!
-Full-fledged online store by Mark Levkovich
+Full-fledged online store
 With:
 
 ~ search engine 
