@@ -13,6 +13,3 @@ With:
 
 ~ authorization
 
-Sorry:
-
-  temporarily suspended, but not for a long time
